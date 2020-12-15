@@ -28,7 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.intro {
+.intro { 
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 20px;
 }
 .about {
-    margin: 0 auto 90px;
+    margin: 0 auto 0px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -438,8 +439,8 @@ input.button4 {
 
  .oplata_item2{
      bottom: auto;
-    font-size: 40px;
-     font-weight: 700;
+    font-size:25px;
+     font-weight: 500;
      color: rgb(214, 10, 10);
      text-transform: uppercase;
      font-family: 'Kaushan Script', cursive;
@@ -447,8 +448,8 @@ input.button4 {
 
  .oplata_item3{
      top: auto;
-     font-weight: 700;
-    font-size: 15px;
+     font-weight: 500;
+    font-size: 14px;
     text-transform: uppercase;
  }
  
