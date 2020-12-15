@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/pizza2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title {
+    color: rgb(10, 10, 10);
+    font-size: 140px;
+    font-weight: 700;
+    text-transform: capitalize ;
+    font-family: 'Kaushan Script', cursive;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: rgb(8, 8, 8);
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: rgb(3, 3, 3);
+}
+
+
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(12, 12, 12);
+}
+
+
+.nav {
+    font: weight 600; 
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: rgb(20, 20, 19);
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #0c0c0b;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: rgb(16, 231, 34);
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: black;
+}
+
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid black;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: black;
+    color: rgb(14, 12, 12);
+}
+
+
+
+
+.slider {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 20%;
+    padding: 25px 0;
+    position: relative;
+
+    border-top: 4px solid black;
+    opacity: .7;
+
+    font-size: 40px;
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color:black;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ .section{
+     padding: 20px 0;
+ }
+
+ .section__header{
+   margin: 0 auto 40px;
+   width: 100%;
+   max-width: 950px;
+   text-align: center; 
+ }
+
+
+
+ .section__suptitle{
+    font-family: 'Kaushan Script', cursive;
+     font-size: 24px;
+     color: #333;
+
+ }
+
+
+
+ .section__title{
+     font-size: 40px;
+     font-weight: 700;
+     color: #333;
+     text-transform: uppercase;
+     font-family: 'Kaushan Script', cursive;
+ }
+
+
+ .section__suptitle::after{
+     content: " ";
+     display: block;
+     width: 60px;
+     height: 3px;
+     margin: 30px auto 30px;
+
+     background-color: red;
+ }
+.section__text{
+    color: #333;
+    font-size: 70px;
+    font-weight: 300;
+
+}
+/* Меню */
+.about_class{
+    background: rgb(231, 226, 226);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.about {
+    margin: 0 auto 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;          
+}
+.about_item{        
+    width: 32%;
+    background: rgb(253, 253, 253);
+}
+ 
+.about_item:hover .about_img img{
+   transform: translate3d(-10px, -10px, 0);
+    
+}
+.about_img{
+    width: auto;
+    height: auto;
+}
+
+.about_img img{ 
+    
+    width: 352px;
+    height: 352px;
+    
+}
+
+.about__text{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+     font-size: 24px;
+     color: #333;
+}
+
+.about__text2{    
+    font-family: 'Montserrat', cursive;
+    font-size: 15px;
+    text-align: center;
+
+}
+/* паста */
+.pasta{      
+    width: 100%;
+    max-width: 1900px; 
+    text-align: center;
+    
+    
+}
+
+.pasta_text{
+    color: #333;
+    font-size: 70px;
+    font-weight: 300;
+    
+
+}
+/* курсив */
+input.button4 {
+    position: relative;
+    display: inline-block;
+    font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    user-select: none;
+    padding: .3em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #ac0707 linear-gradient(#e01414, #c20811);
+    box-shadow: inset #d81616 0 -1px 1px, inset 0 1px 1px #0a0c0a, #131413 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+  }
+  input.button4:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  input.button4:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+  }
+  @-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+
+  }
+
+  a.button31 {
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    outline: none;
+    background: rgb(252, 5, 5);
+    box-shadow: 0 1px rgba(216, 8, 8, 0.952) inset, 0 1px rgb(253, 8, 8);
+  }
+  a.button31:after, a.button31:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 8%;
+    left: -15%;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 1px white inset, 0 1px white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(315deg);
+  }
+  a.button31:before {
+    left: 15%;
+    -webkit-transform: rotate(200deg);
+    transform: rotate(225deg);
+  }
+/* доставка */
+  .dostavka{
+     
+    width: 100%;
+    max-width: 1900px; 
+    text-align: center;
+  }
+ .dostavka_item{
+    color: #333;
+    font-size: 70px;
+    font-weight: 300;
+ }
+
+
+
+ /* Оплата */
+
+ .oplata{
+    text-align: left;
+    margin: 0 auto 90px;    
+    width: 100%;
+    max-width: 750px; 
+ }
+
+
+ .oplata_item{
+     list-style-image: url(moto.png);
+     
+ }
+
+ .oplata_item2{
+     bottom: auto;
+    font-size: 40px;
+     font-weight: 700;
+     color: rgb(214, 10, 10);
+     text-transform: uppercase;
+     font-family: 'Kaushan Script', cursive;
+ }
+
+ .oplata_item3{
+     top: auto;
+     font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+ }
+ 
+
+ /* салат */
+
+ .salat{
+    width: 100%;
+    max-width: 1900px; 
+    text-align: center;
+    
+ }
+
+ .salat_item{
+     color: #333;
+    font-size: 70px;
+    font-weight: 300;
+ }
+
+
+ .knopka{
+    width: 100%;
+    max-width: 1900px; 
+    text-align: center;
+ }
